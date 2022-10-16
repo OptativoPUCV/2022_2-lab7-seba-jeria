@@ -2,3 +2,9 @@ Sun 16 Oct 2022 12:22:41 AM UTC:
  tests:  0|4
 total_score: 0/70
 1eaf19d
+Sun 16 Oct 2022 12:26:50 AM UTC: 
+ heap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  1|3
+total_score: 10/70
+99485f4
