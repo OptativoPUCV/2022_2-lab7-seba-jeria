@@ -32,7 +32,7 @@ void heap_push(Heap* pq, void* data, int priority){
   pq->heapArray[pq->size].data = data;
   pq->heapArray[pq->size].priority = priority;
   int aux = pq->size;
-  while(aux != 0 && pq->heapArray[aux].priority > pq->heapArray[(aux-1)/2].priority){
+  while(aux != 0 && (pq->heapArray[aux].priority) > (pq->heapArray[(aux-1)/2].priority)){
     heapElem aux2 = pq->heapArray[aux];
     pq->heapArray[aux] = pq->heapArray[(aux-1)/2];
     pq->heapArray[(aux-1)/2] = aux2;
@@ -49,8 +49,8 @@ void heap_pop(Heap* pq){
   pq->heapArray[pq->size].priority = 0;
   pq->size--; 
   int aux = 0;
-  while((2*aux+2) <= pq->capac && (pq->heapArray[2*aux+1].priority > pq->heapArray[aux].priority || pq->heapArray[2*aux+2].priority > pq->heapArray[aux].priority)){
-    if(pq->heapArray[2*aux+1].priority > pq->heapArray[2*aux+2].priority){
+  while((2*aux+2) <= pq->capac && ((pq->heapArray[2*aux+1].priority) > (pq->heapArray[aux].priority) || (pq->heapArray[2*aux+2].priority) > (pq->heapArray[aux].priority))){
+    if((pq->heapArray[2*aux+1].priority) > (pq->heapArray[2*aux+2].priority)){
       heapElem aux2 = pq->heapArray[aux];
       pq->heapArray[aux] = pq->heapArray[2*aux+1];
       pq->heapArray[2*aux+1] = aux2;
