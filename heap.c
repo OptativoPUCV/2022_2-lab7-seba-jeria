@@ -58,8 +58,8 @@ void heap_pop(Heap* pq){
     }
     else{
       heapElem aux2 = pq->heapArray[aux];
-      pq->heapArray[aux] = pq->heapArray[2*aux+1];
-      pq->heapArray[2*aux+1] = aux2;
+      pq->heapArray[aux] = pq->heapArray[2*aux+2];
+      pq->heapArray[2*aux+2] = aux2;
       aux = 2*aux+2;
     }
   }
