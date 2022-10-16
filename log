@@ -24,3 +24,13 @@ Sun 16 Oct 2022 05:48:49 PM UTC:
  tests:  7|1
 total_score: 45/70
 8fff6fa
+Sun 16 Oct 2022 05:51:57 PM UTC: 
+ heap.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:52:81: error: expected expression before ‘>’ token
+   52 |   while((2*aux+2) <= pq->capac && (pq->heapArray[2*aux+1].priority > pq-        >heapArray[aux].priority ||pq->heapArray[2*aux+2].priority > pq->heapArray[aux].priority)){
+      |                                                                                 ^
+Compilation failed
+e47580f
